@@ -22,10 +22,6 @@ type CarouselProps = {
 type CarouselContextProps = {
 	carouselRef: ReturnType<typeof useEmblaCarousel>[0];
 	api: ReturnType<typeof useEmblaCarousel>[1];
-	scrollPrev: () => void;
-	scrollNext: () => void;
-	canScrollPrev: boolean;
-	canScrollNext: boolean;
 } & CarouselProps;
 
 const CarouselContext = React.createContext<CarouselContextProps | null>(null);
@@ -70,7 +66,6 @@ const Carousel = React.forwardRef<
 			if (!api) {
 				return;
 			}
-
 			setCanScrollPrev(api.canScrollPrev());
 			setCanScrollNext(api.canScrollNext());
 		}, []);
@@ -82,19 +77,6 @@ const Carousel = React.forwardRef<
 		const scrollNext = React.useCallback(() => {
 			api?.scrollNext();
 		}, [api]);
-
-		const handleKeyDown = React.useCallback(
-			(event: React.KeyboardEvent<HTMLDivElement>) => {
-				if (event.key === "ArrowLeft") {
-					event.preventDefault();
-					scrollPrev();
-				} else if (event.key === "ArrowRight") {
-					event.preventDefault();
-					scrollNext();
-				}
-			},
-			[scrollPrev, scrollNext]
-		);
 
 		React.useEffect(() => {
 			if (!api || !setApi) {
@@ -126,15 +108,10 @@ const Carousel = React.forwardRef<
 					opts,
 					orientation:
 						orientation || (opts?.axis === "y" ? "vertical" : "horizontal"),
-					scrollPrev,
-					scrollNext,
-					canScrollPrev,
-					canScrollNext,
 				}}
 			>
 				<div
 					ref={ref}
-					onKeyDownCapture={handleKeyDown}
 					className={cn("relative", className)}
 					role="region"
 					aria-roledescription="carousel"
@@ -160,7 +137,7 @@ const CarouselContent = React.forwardRef<
 				ref={ref}
 				className={cn(
 					"flex",
-					orientation === "horizontal" ? "-ml-4" : "-mt-4 flex-col",
+					orientation === "horizontal" ? "-ml-2" : "-mt-2 flex-col",
 					className
 				)}
 				{...props}

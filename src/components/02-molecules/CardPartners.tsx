@@ -25,7 +25,7 @@ export const CardPartners = () => {
 	return (
 		<div
 			className={cn([
-				" flex h-[76px] items-center justify-center md:mx-[30px] lg:mx-[30px]",
+				" flex h-[76px] items-center justify-center md:mx-[20px] lg:mx-[20px]",
 				isMobile && "mx-[10px] mt-[20px] flex h-[76px]",
 			])}
 		>
@@ -36,22 +36,22 @@ export const CardPartners = () => {
 						loop: true,
 					}}
 					plugins={[plugin.current]}
-					className="w-full max-w-xs"
+					className="w-full"
 					onMouseEnter={plugin.current.stop}
 					onMouseLeave={plugin.current.reset}
 				>
 					<CarouselContent>
-						<CarouselItem className="basis-1/3">
+						<CarouselItem className="basis-1/4">
 							<div className="div flex h-[76px] items-center ">
 								<Image src={web3dev} width={100} height={43} alt={"Web3dev"} />
 							</div>
 						</CarouselItem>
-						<CarouselItem className="basis-1/3">
+						<CarouselItem className="basis-1/4">
 							<div className="div flex h-[76px] items-center ">
 								<Image src={solana} width={128} height={25} alt={"Solana"} />
 							</div>
 						</CarouselItem>
-						<CarouselItem className="basis-1/3">
+						<CarouselItem className="basis-1/4">
 							<div className="div flex h-[76px] items-center ">
 								<Image
 									src={metamask}
@@ -61,7 +61,7 @@ export const CardPartners = () => {
 								/>
 							</div>
 						</CarouselItem>
-						<CarouselItem className="basis-1/3">
+						<CarouselItem className="basis-1/4">
 							<div className="div flex h-[76px] items-center ">
 								<Image
 									src={theGraph}
@@ -71,7 +71,7 @@ export const CardPartners = () => {
 								/>
 							</div>
 						</CarouselItem>
-						<CarouselItem className="basis-1/3">
+						<CarouselItem className="basis-1/4">
 							<div className="div flex h-[76px] items-center ">
 								<Image
 									src={thinkDev}
@@ -81,12 +81,12 @@ export const CardPartners = () => {
 								/>
 							</div>
 						</CarouselItem>
-						<CarouselItem className="basis-1/3">
+						<CarouselItem className="basis-1/4">
 							<div className="div flex h-[76px] items-center ">
 								<Image src={polygon} width={134} height={76} alt={"Polygon"} />
 							</div>
 						</CarouselItem>
-						<CarouselItem className="basis-1/3">
+						<CarouselItem className="basis-1/4">
 							<div className="div flex h-[76px] items-center ">
 								<Image src={LaChain} width={172} height={67} alt={"LaChain"} />
 							</div>
