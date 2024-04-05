@@ -20,7 +20,7 @@ import {
 export const CardPartners = () => {
 	const { isMobile } = useScreenSize();
 	const plugin = React.useRef(
-		Autoplay({ delay: 2000, stopOnInteraction: true })
+		Autoplay({ delay: 1500, stopOnInteraction: false })
 	);
 	return (
 		<div
@@ -36,9 +36,7 @@ export const CardPartners = () => {
 						loop: true,
 					}}
 					plugins={[plugin.current]}
-					className="w-full"
-					onMouseEnter={plugin.current.stop}
-					onMouseLeave={plugin.current.reset}
+					className="w-[auto]"
 				>
 					<CarouselContent>
 						<CarouselItem className="basis-1/4">
@@ -94,7 +92,14 @@ export const CardPartners = () => {
 					</CarouselContent>
 				</Carousel>
 			) : (
-				<Carousel>
+				<Carousel
+					opts={{
+						align: "start",
+						loop: true,
+					}}
+					plugins={[plugin.current]}
+					className="w-full xl:w-[900px]"
+				>
 					<CarouselContent>
 						<CarouselItem className="basis-1/7">
 							<div className="div flex h-[76px] items-center ">
