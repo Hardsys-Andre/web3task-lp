@@ -5,8 +5,8 @@ const CardsTheFooterData = [
 		title: "Quick Link",
 		items: [
 			{ label: "About", link: "/#" },
-			{ label: "How it works", link: "/#" },
-			{ label: "Roadmap", link: "/#" },
+			{ label: "How it works", link: "#howItWorks" },
+			{ label: "Roadmap", link: "#roadmap" },
 			{ label: "FAQ", link: "/#" },
 		],
 	},

@@ -12,7 +12,7 @@ import cardTakProgress from "@/app/public/hero/cardTakProgress.jpg";
 import cardTaskDone from "@/app/public/hero/cardTaskDone.jpg";
 import mailIcon from "@/app/public/hero/mailIcon.png";
 import linesGreen from "@/app/public/hero/linesGrey.png";
-
+import Link from "next/link";
 import Image from "next/image";
 import { useScreenSize } from "@/hooks/useScreenSize";
 import { cn } from "@/lib/utils";
@@ -55,14 +55,16 @@ export const CardHero = () => {
 						</p>
 					</div>
 					<div className="mt-[36px] lg:ml-[23.5px]">
-						<Button size={"lg"}>
-							Open dApp
-							{
-								<div className="ml-2">
-									<ArrowIcon />
-								</div>
-							}
-						</Button>
+						<Link href="https://web3task.w3d.community/">
+							<Button size={"lg"}>
+								Open dApp
+								{
+									<div className="ml-2">
+										<ArrowIcon />
+									</div>
+								}
+							</Button>
+						</Link>
 					</div>
 					<div className="mt-[65px] flex gap-5 xl:h-[53px] xl:w-[255px]">
 						<div
