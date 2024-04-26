@@ -13,7 +13,7 @@ export const Faq = () => {
 				"We connect workers to projects, eliminating high partner fees and the lack of skills assessment. Our protocol empowers users through active participation in real projects, allowing recruiters to find professionals with certified experience. We provide tools like scoring to measure results by tokenizing work, social profiles, and portfolios. A network to facilitate connections between users and projects, to create a transparent and trustworthy Web 3.0 environment.",
 		},
 		{
-			title: "What are the benefits of joining Web3Task as a student?",
+			title: "What are the benefits as a student?",
 			answer:
 				"You will have the opportunity to gain hands-on experience working on real projects, allowing you to build a robust and verifiable portfolio in the chain, as well as expanding your professional network and the opportunity to be hired by Kyodo.",
 		},
@@ -38,13 +38,12 @@ export const Faq = () => {
 				"Instead of a traditional dispute system, we have chosen a gamified approach. Initiating a dispute is considered risky for both parties, as a dispute drastically lowers the DAO&nbsp;s score for the party whose decision was unfavorable. This policy encourages collaborative problem-solving, which avoids unnecessary disputes and serious harm to those who are wrong. This is why it is so important to describe the desired task correctly and also to perform the chosen task with finesse.",
 		},
 		{
-			title:
-				"What are the benefits of participating in Web3Task as a recruiter?",
+			title: "What are the benefits as a recruiter?",
 			answer:
 				"You will be able to find people who can meet your needs, often at a lower cost than expanding your internal team or finding a freelancer.",
 		},
 		{
-			title: "What types of tasks are available on the platform?",
+			title: "What types of tasks are available?",
 			answer:
 				"You&sbnpll find a wide range of development tasks available. From programming tasks to design, planning, and other areas of development.",
 		},
