@@ -18,7 +18,7 @@ export const Accordion = ({ title, answer }: AccordionProps) => {
 				className="flex w-full justify-between"
 			>
 				<span>
-					<p className="text-start font-['Inter'] text-sm font-bold leading-relaxed text-white md:text-xl md:leading-[30px]">
+					<p className="text-lg font-bold leading-relaxed text-white md:text-xl md:leading-[30px]">
 						{title}
 					</p>
 				</span>
@@ -32,7 +32,7 @@ export const Accordion = ({ title, answer }: AccordionProps) => {
 				}`}
 			>
 				<div className="overflow-hidden">
-					<p className="font-['Inter'] text-[19px] text-xs font-normal leading-[15px] text-[#B7B4BB] md:leading-[30px]">
+					<p className="text-base font-normal leading-[15px] text-[#B7B4BB] md:text-lg md:leading-[30px]">
 						{answer}
 					</p>
 				</div>
