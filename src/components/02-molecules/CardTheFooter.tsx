@@ -13,9 +13,12 @@ const CardsTheFooterData = [
 	{
 		title: "Community",
 		items: [
-			{ label: "Documentation", link: "/#" },
-			{ label: "Web3Dev", link: "/#" },
-			{ label: "LinkTree", link: "/#" },
+			{ label: "Documentation", link: "https://web3task.gitbook.io/web3task" },
+			{ label: "Web3Dev", link: "https://www.web3dev.media/" },
+			{
+				label: "LinkTree",
+				link: "https://linktr.ee/web3task?utm_source=linktree_profile_share&ltsid=bd5b2288-989c-4719-9605-c5be37875792",
+			},
 		],
 	},
 ];

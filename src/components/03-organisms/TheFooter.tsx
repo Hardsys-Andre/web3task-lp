@@ -1,6 +1,7 @@
 "use client";
 import { CardsTheFooter } from "@/components/02-molecules";
 import Image from "next/image";
+import Link from "next/link";
 import web3tasklogo1 from "@/app/public/the-footer/web3tasklogo1.svg";
 import twiter from "@/app/public/the-footer/twiterIcon.png";
 import discord from "@/app/public/the-footer/discordIcon.png";
@@ -21,16 +22,20 @@ export const TheFooter = () => {
 						</p>
 					</div>
 					<div className="flex items-center justify-center gap-6 md:h-[28px] md:w-[80px] md:justify-start">
-						<Image
-							className="h-[20px] w-[20px]  md:h-[24px] md:w-[25px]"
-							src={twiter}
-							alt={"Twiter Icon"}
-						/>
-						<Image
-							className="h-[20px] w-[25px] md:h-[24px] md:w-[30px]"
-							src={discord}
-							alt={"Discord Icon"}
-						/>
+						<Link href="https://twitter.com/web3task">
+							<Image
+								className="h-[20px] w-[20px]  md:h-[24px] md:w-[25px]"
+								src={twiter}
+								alt={"Twiter Icon"}
+							/>
+						</Link>
+						<Link href="https://discord.gg/Zm6aEafv">
+							<Image
+								className="h-[20px] w-[25px] md:h-[24px] md:w-[30px]"
+								src={discord}
+								alt={"Discord Icon"}
+							/>
+						</Link>
 					</div>
 				</div>
 				<div className="flex flex-col md:w-[350px]">
@@ -39,7 +44,7 @@ export const TheFooter = () => {
 			</div>
 			<div className="mt-12 flex w-full flex-col-reverse items-center justify-between text-[#B7B4BB] md:flex-row md:items-start">
 				<div className="flex text-[15px] text-[#B7B4BB]">
-					Copyright 2023 Web3Task
+					Copyright 2024 Web3Task
 				</div>
 				<div className="flex flex-row items-center gap-5 ">
 					<div>Privacy policy</div>
