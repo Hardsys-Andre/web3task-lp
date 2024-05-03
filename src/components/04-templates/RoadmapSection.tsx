@@ -1,4 +1,4 @@
-import { TheRoadmap } from "@/components/02-molecules";
+import { TheRoadmap } from "@/components/02-molecules/CardTheRoadmap";
 
 export const RoadmapSection = () => {
 	return (
