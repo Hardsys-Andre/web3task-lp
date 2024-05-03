@@ -4,10 +4,10 @@ const CardsTheFooterData = [
 	{
 		title: "Quick Link",
 		items: [
-			{ label: "About", link: "/#" },
+			{ label: "About", link: "#home" },
 			{ label: "How it works", link: "#howItWorks" },
 			{ label: "Roadmap", link: "#roadmap" },
-			{ label: "FAQ", link: "/#" },
+			{ label: "FAQ", link: "#faq" },
 		],
 	},
 	{
