@@ -1,23 +1,29 @@
 import CardTheFooterLayout from "@/components/01-atoms/CardTheFooterLayout";
+import { Target } from "lucide-react";
 
 const CardsTheFooterData = [
 	{
 		title: "Quick Link",
 		items: [
-			{ label: "About", link: "#home" },
-			{ label: "How it works", link: "#howItWorks" },
-			{ label: "Roadmap", link: "#roadmap" },
-			{ label: "FAQ", link: "#faq" },
+			{ label: "About", link: "#home", target: "" },
+			{ label: "How it works", link: "#howItWorks", target: "" },
+			{ label: "Roadmap", link: "#roadmap", target: "" },
+			{ label: "FAQ", link: "#faq", target: "" },
 		],
 	},
 	{
 		title: "Community",
 		items: [
-			{ label: "Documentation", link: "https://web3task.gitbook.io/web3task" },
-			{ label: "Web3Dev", link: "https://www.web3dev.media/" },
+			{
+				label: "Documentation",
+				link: "https://web3task.gitbook.io/web3task",
+				target: "Blank",
+			},
+			{ label: "Web3Dev", link: "https://www.web3dev.media/", target: "Blank" },
 			{
 				label: "LinkTree",
 				link: "https://linktr.ee/web3task?utm_source=linktree_profile_share&ltsid=bd5b2288-989c-4719-9605-c5be37875792",
+				target: "Blank",
 			},
 		],
 	},

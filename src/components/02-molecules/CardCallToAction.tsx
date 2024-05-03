@@ -43,7 +43,7 @@ export const CardCallToAction = () => {
 			</div>
 			<div className="mt-[46px]">
 				{isMobile ? (
-					<Link href="https://web3task.w3d.community/">
+					<Link href="https://web3task.w3d.community/" target="blank">
 						<Button
 							size={"sm"}
 							style={{
@@ -58,7 +58,7 @@ export const CardCallToAction = () => {
 						</Button>
 					</Link>
 				) : (
-					<Link href="https://web3task.w3d.community/">
+					<Link href="https://web3task.w3d.community/" target="blank">
 						<Button
 							size={"lg"}
 							style={{

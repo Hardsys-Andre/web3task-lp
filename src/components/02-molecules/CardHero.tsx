@@ -55,7 +55,7 @@ export const CardHero = () => {
 						</p>
 					</div>
 					<div className="mt-[36px] lg:ml-[23.5px]">
-						<Link href="https://web3task.w3d.community/">
+						<Link href="https://web3task.w3d.community/" target="blank">
 							<Button size={"lg"}>
 								Open dApp
 								{

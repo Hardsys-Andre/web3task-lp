@@ -43,7 +43,7 @@ export const TheHeader = () => {
 					</div>
 					<div className="flex flex-col">
 						{isTablet ? (
-							<Link href="https://web3task.w3d.community/">
+							<Link href="https://web3task.w3d.community/" target="blank">
 								<Button size={"sm"}>
 									Open dApp
 									<div className="ml-1">
@@ -52,7 +52,7 @@ export const TheHeader = () => {
 								</Button>
 							</Link>
 						) : (
-							<Link href="https://web3task.w3d.community/">
+							<Link href="https://web3task.w3d.community/" target="blank">
 								<Button>
 									Open dApp
 									<div className="ml-1">

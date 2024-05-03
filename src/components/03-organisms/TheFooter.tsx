@@ -22,14 +22,14 @@ export const TheFooter = () => {
 						</p>
 					</div>
 					<div className="flex items-center justify-center gap-6 md:h-[28px] md:w-[80px] md:justify-start">
-						<Link href="https://twitter.com/web3task">
+						<Link href="https://twitter.com/web3task" target="blank">
 							<Image
 								className="h-[20px] w-[20px]  md:h-[24px] md:w-[25px]"
 								src={twiter}
 								alt={"Twiter Icon"}
 							/>
 						</Link>
-						<Link href="https://discord.gg/Zm6aEafv">
+						<Link href="https://discord.gg/Zm6aEafv" target="blank">
 							<Image
 								className="h-[20px] w-[25px] md:h-[24px] md:w-[30px]"
 								src={discord}
