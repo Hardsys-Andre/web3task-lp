@@ -6,6 +6,7 @@ import {
 	RoadmapSection,
 	CTASection,
 	TheFooterSection,
+	FaqSection,
 } from "@/components/04-templates";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
 			<WhyChooseUsSection />
 			<HowItWorksSection />
 			<RoadmapSection />
+			<FaqSection />
 			<CTASection />
 			<TheFooterSection />
 		</main>
