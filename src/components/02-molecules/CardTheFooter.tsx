@@ -5,7 +5,6 @@ const CardsTheFooterData = [
 	{
 		title: "Quick Link",
 		items: [
-			{ label: "About", link: "#home", target: "" },
 			{ label: "How it works", link: "#howItWorks", target: "" },
 			{ label: "Roadmap", link: "#roadmap", target: "" },
 			{ label: "FAQ", link: "#faq", target: "" },
