@@ -4,7 +4,7 @@ import Image from "next/image";
 import web3TaskLogo from "@/app/public/web3TaskLogo.png";
 import { useScreenSize } from "@/hooks/useScreenSize";
 import Link from "next/link";
-import { Button, NavbarMobile } from "@/components/01-atoms";
+import { Button, NavbarMobile, ArrowIcon } from "@/components/01-atoms";
 import { navBarMenu } from "@/lib/constants";
 
 export const TheHeader = () => {
@@ -43,9 +43,23 @@ export const TheHeader = () => {
 					</div>
 					<div className="flex flex-col">
 						{isTablet ? (
-							<Button size={"sm"}>Open dApp</Button>
+							<Link href="https://web3task.w3d.community/" target="blank">
+								<Button size={"sm"}>
+									Open dApp
+									<div className="ml-1">
+										<ArrowIcon />
+									</div>
+								</Button>
+							</Link>
 						) : (
-							<Button>Open dApp</Button>
+							<Link href="https://web3task.w3d.community/" target="blank">
+								<Button>
+									Open dApp
+									<div className="ml-1">
+										<ArrowIcon />
+									</div>
+								</Button>
+							</Link>
 						)}
 					</div>
 				</div>

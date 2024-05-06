@@ -3,6 +3,7 @@ import React from "react";
 interface CardItem {
 	label: string;
 	link: string;
+	target: string;
 }
 
 interface CardTheFooterProps {
@@ -22,6 +23,7 @@ const CardTheFooterLayout = ({ title, items }: CardTheFooterProps) => {
 						className="text-[12px] text-[#B7B4BB] md:text-[18px]"
 						key={index}
 						href={item.link}
+						target={item.target}
 					>
 						{item.label}
 					</a>

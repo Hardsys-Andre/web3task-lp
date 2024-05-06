@@ -15,8 +15,8 @@ interface NavBarMenuProps {
 }
 
 export const navBarMenu: NavBarMenuProps[] = [
-	{ title: NavbarMenuTitle.HOME, href: "/" },
-	{ title: NavbarMenuTitle.HOW_IT_WORKS, href: "/" },
-	{ title: NavbarMenuTitle.ROADMAP, href: "/" },
-	{ title: NavbarMenuTitle.FAQ, href: "/" },
+	{ title: NavbarMenuTitle.HOME, href: "#home" },
+	{ title: NavbarMenuTitle.HOW_IT_WORKS, href: "#howItWorks" },
+	{ title: NavbarMenuTitle.ROADMAP, href: "#roadmap" },
+	{ title: NavbarMenuTitle.FAQ, href: "#faq" },
 ];

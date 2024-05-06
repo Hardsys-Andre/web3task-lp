@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import ctabg from "@/app/public/call-to-action/ctabg.png";
 import ethereum02 from "@/app/public/call-to-action/ethereum02.png";
 import bitcoin01 from "@/app/public/call-to-action/bitcoin01.png";
@@ -10,17 +11,18 @@ export const CardCallToAction = () => {
 	const { isMobile } = useScreenSize();
 	return (
 		<div className="relative flex h-[302px] w-full flex-col items-center md:h-[470px]">
-			<div className="absolute w-full md:h-[470px] xl:w-full">
+			<div
+				className="absolute w-full md:h-[470px] xl:w-full"
+				style={{
+					zIndex: 1,
+				}}
+			>
 				<Image
 					className="h-[302px] w-full md:h-[470px]"
 					src={ctabg}
 					alt={"ctabg"}
 					style={{
-						position: "absolute",
-						left: 0,
-						top: 0,
 						zIndex: 1,
-						border: 1,
 					}}
 				/>
 			</div>
@@ -41,19 +43,35 @@ export const CardCallToAction = () => {
 			</div>
 			<div className="mt-[46px]">
 				{isMobile ? (
-					<Button size={"sm"}>
-						Open dApp
-						<div className="ml-1">
-							<ArrowIcon />
-						</div>
-					</Button>
+					<Link href="https://web3task.w3d.community/" target="blank">
+						<Button
+							size={"sm"}
+							style={{
+								position: "relative",
+								zIndex: 2,
+							}}
+						>
+							Open dApp
+							<div className="ml-1">
+								<ArrowIcon />
+							</div>
+						</Button>
+					</Link>
 				) : (
-					<Button size={"lg"}>
-						Open dApp
-						<div className="ml-2">
-							<ArrowIcon />
-						</div>
-					</Button>
+					<Link href="https://web3task.w3d.community/" target="blank">
+						<Button
+							size={"lg"}
+							style={{
+								position: "relative",
+								zIndex: 2,
+							}}
+						>
+							Open dApp
+							<div className="ml-2">
+								<ArrowIcon />
+							</div>
+						</Button>
+					</Link>
 				)}
 			</div>
 			<div className="absolute bottom-[132px] left-[20%] flex h-[25px] w-[25px] md:left-[15%] md:h-[40px] md:w-[40px]">
