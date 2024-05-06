@@ -11,3 +11,5 @@ export * from "./icons/LineSeparatorIcon";
 export * from "./icons/SystemCodeIcon";
 export * from "./icons/UserCardIdIcon";
 export * from "./CardMetrics";
+export * from "./ui/CascataDeImagens";
+export * from "./CardTheRoadmapLayout";

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import roadmap from "@/app/public/roadmap/roadmap.png";
 import { LineSeparatorIcon } from "@/components/01-atoms";
+import CardTheRoadmapLayout from "@/components/01-atoms/CardTheRoadmapLayout";
 
 export const TheRoadmap = () => {
 	return (
@@ -16,8 +17,8 @@ export const TheRoadmap = () => {
 					&nbsp;Roadmap
 				</span>
 			</div>
-			<div>
-				<Image src={roadmap} alt={"roadmap"} />
+			<div className="">
+				<CardTheRoadmapLayout />
 			</div>
 			<div className="div mb-[100px] mt-[100px] flex justify-center">
 				<LineSeparatorIcon />
