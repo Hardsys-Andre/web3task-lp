@@ -20,7 +20,11 @@ export const TheHeader = () => {
 					)}
 				>
 					<div className="flex items-center">
-						<Image src={web3tasklogo1} alt={"Web3Task"} />
+						<Image
+							src={web3tasklogo1}
+							alt={"Web3Task"}
+							className="transition duration-500 hover:scale-125"
+						/>
 					</div>
 					<div className="flex h-[80px] xl:px-[90px]">
 						{navBarMenu.map((menuItem, index) => (

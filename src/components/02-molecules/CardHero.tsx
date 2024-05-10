@@ -165,17 +165,21 @@ export const CardHero = () => {
 									className=""
 								/>
 							</div>
+							<div
+								className="absolute right-[100px] top-[180px]"
+								style={{
+									zIndex: 100,
+								}}
+							>
+								<Image
+									src={mailIcon}
+									alt="Mail Icon"
+									width={50}
+									height={50}
+									className="transition duration-500 hover:scale-125"
+								/>
+							</div>
 						</div>
-						<div className="flex w-full items-center justify-end">
-							<Image
-								src={mailIcon}
-								alt="Mail Icon"
-								width={33}
-								height={30}
-								className="opacity-70"
-							/>
-						</div>
-
 						<div
 							className={cn([
 								"relative bottom-[20px] flex h-full w-full items-center justify-center",
