@@ -166,7 +166,7 @@ export const CardHero = () => {
 								/>
 							</div>
 							<div
-								className="absolute right-[100px] top-[180px]"
+								className="absolute right-[10px] top-[160px] xl:right-[100px] xl:top-[180px]"
 								style={{
 									zIndex: 100,
 								}}

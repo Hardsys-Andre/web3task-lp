@@ -67,16 +67,13 @@ export const TheHeader = () => {
 						zIndex: 1000,
 					}}
 				>
-					<div className="flex items-center">
+					<div className="flex w-full items-center justify-center">
 						<Image
-							src={web3TaskLogo}
-							alt={"Web3Task Logo"}
-							width={80}
-							height={80}
+							src={web3tasklogo1}
+							alt={"Web3Task"}
+							height={40}
+							className="transition duration-500 hover:scale-110"
 						/>
-						<p className="text-lg font-normal tracking-widest">
-							WEB<span className="text-[#00E1FF]">3</span>TASK
-						</p>
 					</div>
 					<div className="mr-4 ">
 						<NavbarMobile />

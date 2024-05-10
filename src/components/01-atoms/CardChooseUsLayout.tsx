@@ -6,7 +6,7 @@ export interface CardProps {
 
 export const CardChooseUsLayout = (card: CardProps) => {
 	return (
-		<div className="div flex h-fit max-w-[277.5px] flex-col justify-center gap-[34px] rounded-3xl border px-[33px] py-[49px] transition hover:bg-gray-900 md:h-full lg:h-auto">
+		<div className="div flex h-fit max-w-[277.5px] flex-col justify-center gap-[34px] rounded-3xl border px-[33px] py-[49px] transition hover:bg-cyan-900 md:h-full lg:h-auto">
 			<div>{card.icon}</div>
 			<div className="flex flex-col gap-6 ">
 				<div className="text-[28px] font-bold leading-[30.80px] text-white">
