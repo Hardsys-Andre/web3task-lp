@@ -16,7 +16,7 @@ const images = [Q1, Q1_1, Q2_1, Q2_2, Q3_1, Q3_2];
 const CardTheRoadmap: React.FC = () => {
 	const { isMobile } = useScreenSize();
 	return (
-		<div className="mt-32 h-[1100px] w-[280px] md:h-[2200px] md:w-[550px]">
+		<div className="mt-32 h-[1100px] w-[280px] transition duration-500 hover:scale-110 md:h-[1850px] md:w-[450px]">
 			{isMobile ? (
 				<CascatadeImagesMB images={images} />
 			) : (

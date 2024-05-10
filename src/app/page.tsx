@@ -1,4 +1,6 @@
 import {
+	RandomMovieImageSection,
+	HeaderSection,
 	HeroSection,
 	PartnersSection,
 	WhyChooseUsSection,
@@ -12,6 +14,8 @@ import {
 export default function Home() {
 	return (
 		<main className="flex h-full w-full flex-col items-center justify-center">
+			<RandomMovieImageSection />
+			<HeaderSection />
 			<HeroSection />
 			<PartnersSection />
 			<WhyChooseUsSection />

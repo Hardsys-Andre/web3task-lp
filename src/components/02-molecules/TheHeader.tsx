@@ -41,7 +41,7 @@ export const TheHeader = () => {
 							</div>
 						))}
 					</div>
-					<div className="flex flex-col">
+					<div className="duration-2000 flex animate-pulse flex-col">
 						{isTablet ? (
 							<Link href="https://web3task.w3d.community/" target="blank">
 								<Button size={"sm"}>
@@ -64,7 +64,12 @@ export const TheHeader = () => {
 					</div>
 				</div>
 			) : (
-				<div className="flex h-[126px] w-full items-center justify-between">
+				<div
+					className="fixed flex h-[60px] w-full items-center justify-between bg-[#0f051d]"
+					style={{
+						zIndex: 1000,
+					}}
+				>
 					<div className="flex items-center">
 						<Image
 							src={web3TaskLogo}

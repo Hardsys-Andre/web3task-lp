@@ -21,7 +21,9 @@ export const CardHowItWorksLayout = (card: CardHowItWorksProps) => {
 				{ "flex-col": isMobile },
 			])}
 		>
-			<div className="flex w-full ">{card.image}</div>
+			<div className="flex w-full transition duration-500 hover:rotate-12">
+				{card.image}
+			</div>
 			<div className="flex w-full flex-col gap-8">
 				<div className="flex flex-col gap-5 ">
 					<div className="text-[19px] font-bold uppercase leading-[33px] text-violet-700">

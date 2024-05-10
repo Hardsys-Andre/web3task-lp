@@ -54,7 +54,7 @@ export const CardHero = () => {
 							students worldwide.
 						</p>
 					</div>
-					<div className="mt-[36px] lg:ml-[23.5px]">
+					<div className="duration-2000 mt-[36px] animate-pulse lg:ml-[23.5px]">
 						<Link href="https://web3task.w3d.community/" target="blank">
 							<Button size={"lg"}>
 								Open dApp
@@ -72,6 +72,7 @@ export const CardHero = () => {
 							style={{ position: "relative", width: "144px", height: "53px" }}
 						>
 							<Image
+								className="transition duration-500 hover:scale-125"
 								src={personIcon01}
 								alt={"Person Icon"}
 								width={48}
@@ -79,6 +80,7 @@ export const CardHero = () => {
 								style={{ position: "absolute", left: 0, top: 0, zIndex: 1 }}
 							/>
 							<Image
+								className="transition duration-500 hover:scale-125"
 								src={personIcon02}
 								alt={"Person Icon"}
 								width={48}
@@ -91,6 +93,7 @@ export const CardHero = () => {
 								}}
 							/>
 							<Image
+								className="transition duration-500 hover:scale-125"
 								src={personIcon03}
 								alt={"Person Icon"}
 								width={48}
@@ -147,11 +150,11 @@ export const CardHero = () => {
 							<div className="relative">
 								<div className="absolute bottom-[-40px] left-40">
 									<Image
+										className="transition duration-500 hover:scale-125"
 										src={cursorIcon}
 										alt="Cursor Icon"
 										width={133}
 										height={117}
-										className=""
 									/>
 								</div>
 								<Image
@@ -180,11 +183,11 @@ export const CardHero = () => {
 							])}
 						>
 							<Image
+								className="transition duration-500 hover:scale-125"
 								src={moneyIcon}
 								alt="Money Icon"
 								width={254}
 								height={187}
-								className=""
 							/>
 						</div>
 
@@ -192,11 +195,11 @@ export const CardHero = () => {
 							<div className="relative lg:bottom-[-40px] xl:bottom-10">
 								<div className="absolute bottom-24 left-10 md:left-28 lg:bottom-20">
 									<Image
+										className="transition duration-500 hover:scale-125"
 										src={clockIcon}
 										alt="Clock Icon"
 										width={155}
 										height={155}
-										className=""
 									/>
 								</div>
 								<Image
@@ -212,11 +215,11 @@ export const CardHero = () => {
 								<div>
 									<div className="absolute bottom-24 left-8 w-fit md:bottom-20 md:left-28">
 										<Image
+											className="transition duration-500 hover:scale-125"
 											src={rocketIcon}
 											alt="Rocket Icon"
 											width={243}
 											height={229}
-											className=""
 										/>
 									</div>
 									<Image

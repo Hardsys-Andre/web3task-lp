@@ -40,7 +40,9 @@ export const CardMetrics = () => {
 				])}
 			>
 				<div className="flex w-[62px] items-center justify-center">
-					<p className="text-[50px] font-bold text-white md:text-[71px]">5k+</p>
+					<p className="text-[50px] font-bold text-white transition transition duration-500 hover:scale-125 hover:text-cyan-700 md:text-[71px]">
+						5k+
+					</p>
 				</div>
 				<div className="top-8 flex h-full w-full items-center justify-center">
 					<p className="text-[17px] font-normal text-[#B7B4BB]">
@@ -56,7 +58,7 @@ export const CardMetrics = () => {
 				])}
 			>
 				<div className="flex w-[62px] items-center justify-center">
-					<p className=" text-[50px] font-bold text-white md:text-[71px]">
+					<p className=" text-[50px] font-bold text-white transition transition duration-500 hover:scale-125 hover:text-cyan-700 md:text-[71px]">
 						200
 					</p>
 				</div>
@@ -72,7 +74,9 @@ export const CardMetrics = () => {
 				])}
 			>
 				<div className="flex w-[6px] items-center justify-center">
-					<p className=" text-[50px] font-bold text-white md:text-[69px]">4h</p>
+					<p className=" text-[50px] font-bold text-white transition transition duration-500 hover:scale-125 hover:text-cyan-700 md:text-[69px]">
+						4h
+					</p>
 				</div>
 				<div className="top-8 flex h-full w-full items-center justify-center">
 					<p className="text-[17px] font-normal text-[#B7B4BB]">
@@ -82,7 +86,7 @@ export const CardMetrics = () => {
 			</div>
 			<div className="flex h-[111.176px] w-[307.5px] flex-col  items-center justify-center">
 				<div className="flex w-[62px] items-center justify-center">
-					<p className=" text-[50px] font-bold text-white md:text-[71px]">
+					<p className=" text-[50px] font-bold text-white transition transition duration-500 hover:scale-125 hover:text-cyan-700 md:text-[71px]">
 						$15
 					</p>
 				</div>

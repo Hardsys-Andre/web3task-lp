@@ -6,3 +6,5 @@ export * from "./RoadmapSection";
 export * from "./FaqSection";
 export * from "./WhyChooseUsSection";
 export * from "./TheFooterSection";
+export * from "./RandomMovingImageSection";
+export * from "./TheHeaderSection";
