@@ -41,7 +41,12 @@ export const CardCallToAction = () => {
 					building
 				</p>
 			</div>
-			<div className="duration-2000 mt-[46px] animate-pulse">
+			<div
+				className="duration-2000 mt-[46px] animate-pulse"
+				style={{
+					zIndex: 2,
+				}}
+			>
 				{isMobile ? (
 					<Link href="https://web3task.w3d.community/" target="blank">
 						<Button

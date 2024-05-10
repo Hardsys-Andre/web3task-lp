@@ -2,6 +2,7 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import web3TaskLogo from "@/app/public/web3TaskLogo.png";
+import web3tasklogo1 from "@/app/public/the-footer/web3tasklogo1.svg";
 import { useScreenSize } from "@/hooks/useScreenSize";
 import Link from "next/link";
 import { Button, NavbarMobile, ArrowIcon } from "@/components/01-atoms";
@@ -19,15 +20,7 @@ export const TheHeader = () => {
 					)}
 				>
 					<div className="flex items-center">
-						<Image
-							src={web3TaskLogo}
-							alt={"Web3Task Logo"}
-							width={80}
-							height={80}
-						/>
-						<p className="text-lg font-normal tracking-widest">
-							WEB<span className="text-[#00E1FF]">3</span>TASK
-						</p>
+						<Image src={web3tasklogo1} alt={"Web3Task"} />
 					</div>
 					<div className="flex h-[80px] xl:px-[90px]">
 						{navBarMenu.map((menuItem, index) => (
