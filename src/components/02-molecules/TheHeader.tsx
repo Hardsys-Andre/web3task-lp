@@ -68,12 +68,14 @@ export const TheHeader = () => {
 					}}
 				>
 					<div className="flex w-full items-center justify-center">
-						<Image
-							src={web3tasklogo1}
-							alt={"Web3Task"}
-							height={40}
-							className="transition duration-500 hover:scale-110"
-						/>
+						<Link href={"#home"}>
+							<Image
+								src={web3tasklogo1}
+								alt={"Web3Task"}
+								height={40}
+								className="transition duration-500 hover:scale-110"
+							/>
+						</Link>
 					</div>
 					<div className="mr-4 ">
 						<NavbarMobile />

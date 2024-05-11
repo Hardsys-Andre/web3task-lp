@@ -13,11 +13,13 @@ export const TheFooter = () => {
 			<div className="flex w-full flex-col-reverse justify-between md:flex-row">
 				<div className="mt-4 flex flex-col gap-4 md:mt-0">
 					<div className="flex items-center justify-center md:w-[230px]">
-						<Image
-							src={web3tasklogo1}
-							alt={"Web3Task"}
-							className="transition duration-500 hover:scale-110"
-						/>
+						<Link href={"#home"}>
+							<Image
+								src={web3tasklogo1}
+								alt={"Web3Task"}
+								className="transition duration-500 hover:scale-110"
+							/>
+						</Link>
 					</div>
 					<div className="flex justify-center text-center text-[12px] font-normal text-[#B7B4BB] md:justify-normal md:text-start md:text-[18px]">
 						<p className="flex w-[254px] md:h-[81px] md:w-[300px]">
