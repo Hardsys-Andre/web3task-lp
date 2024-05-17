@@ -55,7 +55,7 @@ export const CardHero = () => {
 						</p>
 					</div>
 					<div className="duration-2000 mt-[36px] animate-pulse lg:ml-[23.5px]">
-						<Link href="https://web3task.w3d.community/" target="blank">
+						<Link href="https://test-web3task.vercel.app/" target="blank">
 							<Button size={"lg"}>
 								Open dApp
 								{
