@@ -7,40 +7,37 @@ import { navBarMenu } from "@/lib/constants";
 
 export const NavbarMobile = () => {
 	const [open, setOpen] = useState<boolean>(false);
-	const menuRef = useRef<HTMLDivElement | null>(null); // Referência para o menu
+	const menuRef = useRef<HTMLDivElement | null>(null);
 
 	const handleClickOutside = (event: MouseEvent) => {
 		if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-			setOpen(false); // Fecha o menu ao clicar fora
+			setOpen(false);
 		}
 	};
 
 	const handleScroll = () => {
 		if (open) {
-			setOpen(false); // Fecha o menu ao rolar
+			setOpen(false);
 		}
 	};
 
 	useEffect(() => {
-		// Listener para cliques fora do menu
 		document.addEventListener("mousedown", handleClickOutside);
 
-		// Listener para eventos de rolagem
 		window.addEventListener("scroll", handleScroll);
 
 		return () => {
-			// Remoção dos listeners para evitar vazamentos de memória
 			document.removeEventListener("mousedown", handleClickOutside);
 			window.removeEventListener("scroll", handleScroll);
 		};
-	}, [open]); // Reexecuta quando 'open' muda
+	}, [open]);
 
 	return (
 		<div className="relative flex flex-col" ref={menuRef}>
 			<button
 				className="flex items-center justify-center"
 				onClick={() => {
-					setOpen(!open); // Alterna entre abrir e fechar o menu
+					setOpen(!open);
 				}}
 			>
 				{open ? <X /> : <MenuIcon />}
