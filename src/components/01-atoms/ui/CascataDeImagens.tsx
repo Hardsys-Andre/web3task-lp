@@ -18,10 +18,10 @@ const CascatadeImages: React.FC<CascatadeImageProps> = ({ images }) => {
 					alt={`Image ${index + 1}`}
 					style={{
 						position: "absolute",
-						top: index * 350,
+						top: index * 285,
 						left: 0,
 						zIndex: images.length - index,
-						width: "550px",
+						width: "450px",
 						transition: "top 0.3s",
 					}}
 				/>
@@ -40,10 +40,10 @@ const CascatadeImagesMB: React.FC<CascatadeImagePropsMB> = ({ images }) => {
 					alt={`Image ${index + 1}`}
 					style={{
 						position: "absolute",
-						top: index * 180,
+						top: index * 170,
 						left: 0,
 						zIndex: images.length - index,
-						width: "300px",
+						width: "280px",
 						transition: "top 0.3s",
 					}}
 				/>

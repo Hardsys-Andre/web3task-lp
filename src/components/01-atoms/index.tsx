@@ -13,3 +13,4 @@ export * from "./icons/UserCardIdIcon";
 export * from "./CardMetrics";
 export * from "./ui/CascataDeImagens";
 export * from "./CardTheRoadmapLayout";
+export * from "./ui/randomMovingImage";
